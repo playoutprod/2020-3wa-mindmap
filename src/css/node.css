@@ -1,0 +1,55 @@
+.node{
+  color:#FFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  height:4em;
+  overflow: visible;
+  margin:0 2em;
+}
+.node .content {
+  position: relative;
+  width:10em;
+  height:4em;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.node .nodeContent {
+  position: relative;
+  width:100%;
+  height:4em;
+  border-radius: .5em;
+  overflow: hidden;
+  border: .3em solid #E97F7F;
+  background-color:#232323;
+  box-sizing: border-box;
+}
+
+.node .nodeContent>*{
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.node .nodeContent .text{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.node .children{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+.node .vlink{
+  position: absolute;
+  width:.3em;
+  background-color: #E97F7F;
+  transform:translate(-1em,2em)
+}
