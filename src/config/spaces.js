@@ -1,4 +1,3 @@
 export default {
-  minSpace : .2,
-  childCoef : 1.7
+  childsCoef : [.2,.2,2,2]
 }

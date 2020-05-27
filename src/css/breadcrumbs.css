@@ -1,0 +1,10 @@
+a,a:visited{
+  color:#FFF;
+}
+.breadcrumb{
+  padding: 0 1em
+}
+.breadcrumb span{
+  color:#FFF;
+  padding: 0 .2em;
+}

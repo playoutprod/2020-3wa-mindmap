@@ -3,30 +3,31 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
   position: relative;
-  height:4em;
   overflow: visible;
-  margin:0 2em;
+  margin-left :4em;
 }
 .node .content {
   position: relative;
-  width:10em;
   height:4em;
+  width:12em;
   display: flex;
   flex-direction:column;
   justify-content: center;
+  margin: 1em 0;
 }
 
 .node .nodeContent {
   position: relative;
   width:100%;
-  height:4em;
-  border-radius: .5em;
+  height:100%;
   overflow: hidden;
-  border: .3em solid #E97F7F;
+  border: .2em solid #FFF;
   background-color:#232323;
   box-sizing: border-box;
 }
+
 
 .node .nodeContent>*{
   display: block;
@@ -42,14 +43,38 @@
   justify-content: center;
   align-items: center;
 }
-.node .children{
+.node .nodeContent .hoverContent{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #232323;
+}
+.node .nodeContent .hoverContent>*{
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  cursor:pointer;
+  border:0;
 }
+.node .nodeContent .hoverContent .settings{
+  background-color: #444444;
+}
+.node .nodeContent .hoverContent img{
+  width:1.5em;
+  height:auto;
+}
+
+.node .children{
+  overflow: visible;
+
+}
+
 .node .vlink{
   position: absolute;
-  width:.3em;
-  background-color: #E97F7F;
-  transform:translate(-1em,2em)
+  width:.2em;
+  transform:translate(-2em,2em)
 }
